@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spherical Region Visualizer | Interactive 3D Calculator for Calculus 3</title>
+    <meta name="description" content="Free interactive 3D visualization tool for spherical regions. Perfect for Calculus 3 students learning rho, phi, and theta boundaries. Adjust parameters in real-time and see instant results.">
+    <meta name="keywords" content="spherical coordinates, calculus 3, multivariable calculus, 3D visualization, rho phi theta, spherical integration, math visualization tool, interactive calculator, vector calculus, hemisphere visualization, spherical wedge, coordinate transformations, spherical region">
+    <meta name="author" content="Texas A&M Engineering">
+   
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Spherical Region Visualizer - Interactive Calculus 3 Tool">
+    <meta property="og:description" content="Free 3D visualization tool for exploring spherical regions. Adjust rho, phi, and theta boundaries in real-time.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ble27.github.io/Spherical-Visualizer/">
+   
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ble27.github.io/Spherical-Visualizer/">
+   
+    <!-- Stylesheet and Scripts-->
+    <link rel = "stylesheet" href = "styles/styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script src = "scripts/script.js"></script>
+</head>
+<body>
+    <h1>Spherical Region Visualizer</h1>
+    <p class="description">
+      Interactive tool for visualizing spherical regions in 3D.
+      Adjust ρ (rho), φ (phi), and θ (theta) boundaries to explore different regions.
+    </p>
+
+    <div id="plot-container">
+      <div id="myPlot"></div>
+    </div>
+
+    <div class="controls">
+      <h3>Boundary Controls</h3>
+      <p class="pi-hint">Type "pi" for π</p>
+     
+      <div class="control-group">
+        <label>ρ (radius):</label>
+        <span class="input-label">Min:</span>
+        <input type="text" id="rho_min" value="0">
+        <span class="input-label">Max:</span>
+        <input type="text" id="rho_max" value="5">
+      </div>
+     
+      <div class="control-group">
+        <label>φ (phi):</label>
+        <span class="input-label">Min:</span>
+        <input type="text" id="phi_min" value="0">
+        <span class="input-label">Max:</span>
+        <input type="text" id="phi_max" value="π">
+        <span class="hint">(0 to π)</span>
+      </div>
+     
+      <div class="control-group">
+        <label>θ (theta):</label>
+        <span class="input-label">Min:</span>
+        <input type="text" id="theta_min" value="0">
+        <span class="input-label">Max:</span>
+        <input type="text" id="theta_max" value="2π">
+        <span class="hint">(0 to 2π)</span>
+      </div>
+     
+      <button id="update-btn">Update Visualization</button>
+    </div>
+
+    <div class="info-section">
+      <h2>About This Tool</h2>
+      <p>
+        This free interactive spherical region visualizer helps Calculus 3 (Multivariable Calculus) students
+        understand 3D regions bounded by spherical coordinates. Visualize spherical regions by adjusting rho (ρ), phi (φ), and theta (θ)
+        parameters in real-time. Perfect for understanding triple integrals and regions of integration in spherical coordinates.
+      </p>
+     
+      <h3>How to Use</h3>
+      <p>
+        Enter your boundary values for ρ (radius), φ (phi angle from the z-axis), and θ (theta angle in the xy-plane).
+        Type "pi" to automatically convert to π notation. Click "Update Visualization" to render the 3D region.
+        Use your mouse to rotate, zoom, and explore the spherical region from any angle.
+      </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#plot-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-height: 600px;
+}
+
+#myPlot {
+    width: 100%;
+    height: 600px;
+}
+
+.controls {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pi-hint {
+    color: #007bff;
+    font-size: 14px;
+    font-style: italic;
+    margin: 5px 0 15px 0;
+}
+
+.control-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-label {
+    margin-left: 10px;
+    margin-right: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.hint {
+    margin-left: 10px;
+    color: #999;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#update-btn {
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#update-btn:hover {
+    background-color: #0056b3;
+}
+
+#update-btn:active {
+    transform: scale(0.98);
+}
+
+.info-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.info-section h3 {
+    color: #007bff;
+    margin-top: 15px;
+}
+
+.info-section ul {
+    line-height: 1.8;
+}
+
+.info-section p {
+    line-height: 1.6;
+    color: #555;
+}
