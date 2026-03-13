@@ -20,8 +20,9 @@
    
     <!-- Stylesheet and Scripts-->
     <link rel = "stylesheet" href = "src/styles/styles.css">
-    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
-    <script src = "src/scripts/script.js"></script>
+    <!-- Ensures scripts wait until DOM fully loads-->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" defer></script>
+    <script src = "src/scripts/script.js" defer></script>
 </head>
 <body>
     <h1>Spherical Region Visualizer</h1>
